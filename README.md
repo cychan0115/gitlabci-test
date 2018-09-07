@@ -1,12 +1,16 @@
 # ci_cd_test
 
 #### 项目介绍
-{**以下是码云平台说明，您可以替换为您的项目简介**
-码云是开源中国推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+说明：基于centos搭建docker +gitlab （CI/CD）持续集成环境
+步骤：
+ （1）安装gitlab，使用CI/CD功能
+  要求： 安装gitlab  runner，编写(gitlab-ci.yml) ，在代码提交，更新时触发ci/cd
+  
+（2）安装docker 
+ 要求：安装docker-compose，编写（docker-compose.yml ），使用compose编排命令定义和运行复杂应用程序,使用dockerfile构建符合实际需求的镜像文件。
 
 #### 软件架构
-软件架构说明
+
 
 
 #### 安装教程

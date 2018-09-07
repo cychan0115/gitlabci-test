@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+ django:
+  build: ./django/
+  volumes:
+    - ./data:/code
