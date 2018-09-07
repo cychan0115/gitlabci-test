@@ -18,3 +18,5 @@
     
     
 #### 结果图
+![image](https://raw.githubusercontent.com/cychan0115/gitlabci-test/master/11.png)
+![image](https://raw.githubusercontent.com/cychan0115/gitlabci-test/master/22.png)
