@@ -21,4 +21,4 @@
 ![image](https://raw.githubusercontent.com/cychan0115/gitlabci-test/master/11.png)
 ![image](https://raw.githubusercontent.com/cychan0115/gitlabci-test/master/22.png)
 ![image](https://raw.githubusercontent.com/cychan0115/gitlabci-test/master/33.jpg)
-![image](https://raw.githubusercontent.com/cychan0115/gitlabci-test/master/44.jpg)
+![image](https://raw.githubusercontent.com/cychan0115/gitlabci-test/master/44.png)
