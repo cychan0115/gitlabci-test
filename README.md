@@ -26,6 +26,77 @@
 ![image](https://raw.githubusercontent.com/cychan0115/gitlabci-test/master/66.png)
 ![image](https://raw.githubusercontent.com/cychan0115/gitlabci-test/master/77.png)
 
+#### 最后的git 结构，因为按要求都用复杂的方法，所以选择了全部应用都是手动安装和部署，因为有源文件的关系不能上传到github,这里给个一个结构，正式版本会做成wget下载
+    root@ubuntu:/data/docker/s2cart/s2cat-ci# tree
+    .
+    ├── a.sh
+    ├── deploy.sh
+    ├── docker
+    │   ├── docker-compose.yml
+    │   ├── etc
+    │   │   └── localtime
+    │   ├── nginx
+    │   │   ├── conf.d
+    │   │   │   └── test.conf
+    │   │   ├── Dockerfile
+    │   │   ├── logs
+    │   │   │   ├── error.log
+    │   │   │   ├── test_access.log
+    │   │   │   └── test_error.log
+    │   │   ├── nginx-1.14.0.tar.gz
+    │   │   └── nginx.conf
+    │   ├── tomcat
+    │   │   ├── apache-tomcat-8.5.33.tar.gz
+    │   │   ├── Dockerfile
+    │   │   ├── jdk-8u181-linux-x64.tar.gz
+    │   │   └── server.xml
+    │   ├── tomcat2
+    │   │   ├── apache-tomcat-8.5.33.tar.gz
+    │   │   ├── Dockerfile
+    │   │   ├── jdk-8u181-linux-x64.tar.gz
+    │   │   └── server.xml
+    │   └── tomcat_ci
+    │       └── Dockerfile
+    ├── README.md
+    ├── src
+    │   ├── dao
+    │   │   └── DiscData.java
+    │   ├── domain
+    │   │   ├── DiscBean.java
+    │   │   ├── ItemOrder.java
+    │   │   └── OrderDisc.java
+    │   ├── struts.xml
+    │   └── web
+    │       ├── CartAction.java
+    │       └── MyAction.java
+    └── WebRoot
+        ├── cart
+        │   ├── checkOut.html
+        │   ├── discCart.jsp
+        │   ├── discInfo.jsp
+        │   ├── ~$eckOut.html
+        │   └── images
+        │       ├── disc001.jpg
+        │       ├── disc002.jpg
+        │       ├── disc003.jpg
+        │       ├── disc004.jpg
+        │       ├── disc005.jpg
+        │       └── header.jpg
+        ├── index.jsp
+        └── WEB-INF
+            ├── lib
+            │   ├── commons-fileupload-1.2.1.jar
+            │   ├── commons-io-1.3.2.jar
+            │   ├── commons-logging-1.0.4.jar
+            │   ├── freemarker-2.3.13.jar
+            │   ├── ognl-2.6.11.jar
+            │   ├── struts2-core-2.1.6.jar
+            │   └── xwork-2.1.2.jar
+            └── web.xml
+
+    17 directories, 47 files
+
+
 #### 小记
 
     把项目S2CAT，放到GITLAB上，搭建配置CI gitlab-ci.yml
